@@ -3,15 +3,6 @@ package assignment4;
 import jdk.internal.util.xml.impl.Input;
 
 
-class scanText{
-    String SourceFilePath;
-    HashMap<Integer, ArrayList<String>> words ;
-    public scanText(String sourceFilePath) {
-        SourceFilePath = sourceFilePath;
-        words= new HashMap<>();
-        UpdateMap();
-    }
-
     private void UpdateMap(){
         try {
             FileReader fileReader = new FileReader(SourceFilePath);
